@@ -25,6 +25,7 @@ Before running the crawler, ensure you have the following installed:
      Open the config.txt file and specify the path to your ChromeDriver.
    ```bash
      CHROME_DRIVER_PATH=C:\path\to\your\chromedriver.exe
+     OUTPUT_FOLDER_PATH=\path\to\your\desired folder
 
 5. **Input URLs:**
      Edit the url.txt file and add the URLs you want to crawl, one per line.
