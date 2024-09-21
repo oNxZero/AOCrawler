@@ -1,0 +1,2 @@
+CHROME_DRIVER_PATH=chromedriver.exe
+OUTPUT_FOLDER_PATH=
