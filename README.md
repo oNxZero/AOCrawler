@@ -1,14 +1,16 @@
 # Albion Online Web Crawler
 
 ## Description
-This Python script is designed to crawl specific URLs from the Albion Online Character Builder website and download all rendered images from the database. It saves them in folders based on build ID, with all armor-related images organized into their own folder, as well as separate folders for abilities. This tool is particularly useful for guilds that utilize a build template and prefer not to download each image manually.
+This Python script is designed to **crawl specific URLs** from the Albion Online Character Builder website and download all rendered images from the database. It organizes these images into folders based on **build ID**, with separate folders for **armor-related images** and **abilities**. 
 
-You can enter multiple URLs in `url.txt`, and they will be processed sequentially, with each URL having its own designated folder. If you prefer not to enter URLs in the text file, you can leave it empty and input them directly in the console manually.
+This tool is particularly beneficial for guilds that utilize build templates and prefer not to download each image manually.
+
+You can enter multiple URLs in `url.txt`, and they will be processed sequentially, with each URL having its own designated folder. If you prefer not to enter URLs in the text file, you can leave it empty and input them directly in the console.
 
 ## Prerequisites
 Before running the crawler, ensure you have the following installed:
-- **Python 3.x**: Make sure Python is installed on your system.
-- **ChromeDriver**: Download and install the ChromeDriver version that matches your Chrome browser. You can find it [here](https://sites.google.com/chromium.org/driver/downloads). Set the path in `config.txt`.
+- **Python 3.x**: Make sure Python is installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
+- **ChromeDriver**: Download and install the ChromeDriver version that matches your Chrome browser. You can find it [here](https://sites.google.com/chromium.org/driver/downloads). Once downloaded, set the path in `config.txt`.
 
 ## Installation
 
@@ -16,23 +18,30 @@ Before running the crawler, ensure you have the following installed:
   
 2. **Install Required Packages:**
      Use pip to install the necessary Python packages. You can install all dependencies listed in requirements.txt by running:
+   ```bash
+     pip install -r requirements.txt
 
-3. **Set Up Configuration:**
+4. **Set Up Configuration:**
      Open the config.txt file and specify the path to your ChromeDriver.
-     For example: CHROME_DRIVER_PATH=C:\path\to\your\chromedriver.exe
+   ```bash
+     CHROME_DRIVER_PATH=C:\path\to\your\chromedriver.exe
 
-4. **Input URLs:**
+5. **Input URLs:**
      Edit the url.txt file and add the URLs you want to crawl, one per line.
-   
+   ```bash
      Example: https://albiononline.com/characterbuilder/solo-builds/view/3917
               https://albiononline.com/characterbuilder/solo-builds/view/3917
 
 ## Usage
 
 1. **Open CMD and cd to the path you saved the tool in**
-   Example : cd Desktop\Crawler
+    ```bash
+   cd Desktop\Crawler
 
-2. **To run the crawler, execute the following command in your terminal:**
-    "python crawler.py"
+3. **To run the crawler, execute the following command in your terminal:**
+     ```bash
+    python crawler.py
+
+4. **wait for the program to finish and enjoy your crawled images :)**
 
 
